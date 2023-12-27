@@ -24,7 +24,8 @@ public enum PipelineType {
     Reflective(0, ReflectivePipeline.class),
     ColoredShape(1, ColoredShapePipeline.class),
     AprilTag(2, AprilTagPipeline.class),
-    Aruco(3, ArucoPipeline.class);
+    Aruco(3, ArucoPipeline.class),
+    Custom(4, CustomPipeline.class);
 
     public final int baseIndex;
     public final Class clazz;

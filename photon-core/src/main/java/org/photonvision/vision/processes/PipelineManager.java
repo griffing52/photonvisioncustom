@@ -311,6 +311,12 @@ public class PipelineManager {
                     added.pipelineNickname = nickname;
                     return added;
                 }
+            case Custom:
+                {
+                    var added = new CustomPipelineSettings();
+                    added.pipelineNickname = nickname;
+                    return added;
+                }
             default:
                 {
                     logger.error("Got invalid pipeline type: " + type);
